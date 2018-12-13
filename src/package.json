@@ -1,0 +1,15 @@
+{
+  "name": "ssdp",
+  "version": "1.0.0",
+  "description": "SSDP server for jack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ameya Savale",
+  "license": "ISC",
+  "dependencies": {
+    "node-ssdp": "^3.2.1"
+  }
+}
