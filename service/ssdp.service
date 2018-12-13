@@ -1,0 +1,14 @@
+[Unit]
+Description=SSDP Service
+After=multi-user.target
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ssdp
+ 
+[Service]
+Type=simple
+ExecStart=/opt/ssdp/bin/ssdp
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target

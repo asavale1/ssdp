@@ -1,0 +1,9 @@
+#!/bin/sh
+
+parent_dir="/opt"
+stdout_log="$parent_dir/ssdp/log/ssdp.log"
+stderr_log="$parent_dir/ssdp/log/ssdp.err"
+
+. /etc/profile
+
+node /opt/ssdp/src/server.js >> "$stdout_log" 2>> "$stderr_log" 
